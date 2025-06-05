@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <!-- AppBar with Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="About"
+            app:titleMarginStart="20dp"
+            app:titleTextColor="@android:color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:navigationIcon="@null" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main Scrollable Content -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/aboutScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Card container -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginHorizontal="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp"
+                android:padding="24dp">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/textAboveCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More about Dividend Calculator!"
+                    android:textSize="18sp"
+                    android:textColor="?android:textColorPrimary"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center" />
+
+                    <!-- Logo -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:src="@drawable/logo"
+                    android:contentDescription="App Icon"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/CircleImage" />
+
+
+
+                <!-- Version -->
+                    <TextView
+                        android:id="@+id/versionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="App Version: 1.0"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="14sp" />
+
+                    <!-- Description -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:justificationMode="inter_word"
+                        android:text="This app estimates earnings from unit trust investments.
+
+"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="14sp" />
+
+                    <!-- Divider -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:contentDescription="Divider"
+                        android:src="@drawable/divider" />
+
+                    <!-- Author Info -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="Author: MUHAMMAD HAFIZ BIN MOHD RAFI\nMatric No: 2023149239\nCourse: ICT602\nGroup: RCDCS2405A"
+                        android:textColor="?android:textColorPrimary"
+                        android:textSize="13sp"
+                        android:lineSpacingExtra="2dp"/>
+
+                    <!-- Contact Icons -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/emailLink"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:clickable="true"
+                            android:contentDescription="Email Icon"
+                            android:focusable="true"
+                            android:padding="8dp"
+                            android:src="@drawable/mail" />
+
+                        <ImageView
+                            android:id="@+id/phoneLink"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="16dp"
+                            android:clickable="true"
+                            android:contentDescription="Phone Icon"
+                            android:focusable="true"
+                            android:padding="8dp"
+                            android:src="@drawable/phone" />
+                    </LinearLayout>
+
+                    <!-- GitHub Link -->
+                    <TextView
+                        android:id="@+id/githubText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="Click me"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_500"
+                        android:textSize="14sp" />
+
+
+                <!-- Copyright -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="© 2025 Dividend Calculator. All rights reserved."
+                    android:textSize="12sp"
+                    android:textColor="?android:textColorSecondary"
+                    android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?attr/colorSurface"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/nav_item_selector"
+        app:itemTextColor="@color/nav_item_selector"
+        android:elevation="10dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
