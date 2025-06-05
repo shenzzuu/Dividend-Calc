@@ -69,7 +69,7 @@ MIT License © 2025 Dividend Calculator
 
 ## 📽️ Presentation Video
 
-Watch the 5-minute video demo: [Link to YouTube or Google Drive video](https://youtu.be/s3GSj4pJdpEz)
+Watch the 5-minute video demo: [Link to YouTube](https://youtu.be/s3GSj4pJdpEz)
 
 ---
 
@@ -82,52 +82,3 @@ Watch the 5-minute video demo: [Link to YouTube or Google Drive video](https://y
 > ➤ Total Dividend = RM2,500.00
 
 ---
-
-## 📁 Folder Structure (Important Files)
-DividendCalc/
-├── app/
-│   ├── manifests/
-│   │   └── AndroidManifest.xml
-│   ├── java/
-│   │   └── com.example.dividendcalc/
-│   │       ├── AboutActivity.java
-│   │       ├── HistoryActivity.java
-│   │       ├── HistoryStorage.java
-│   │       └── MainActivity.java
-│   ├── res/
-│   │   ├── color/
-│   │   │   └── nav_item_selector.xml
-│   │   ├── drawable/
-│   │   │   ├── about.xml
-│   │   │   ├── divider.xml
-│   │   │   ├── history.xml
-│   │   │   ├── home.xml
-│   │   │   ├── invest.xml
-│   │   │   ├── rate.xml
-│   │   │   ├── month.xml
-│   │   │   ├── phone.png
-│   │   │   ├── mail.png
-│   │   │   ├── logo.png
-│   │   │   ├── ic_logo.png
-│   │   │   ├── ic_launcher_background.xml
-│   │   │   ├── ic_launcher_foreground.xml
-│   │   │   ├── result_bg.xml
-│   │   │   ├── rounded_bg.xml
-│   │   │   ├── rounded_image.xml
-│   │   │   └── splash_background.xml
-│   │   ├── layout/
-│   │   │   ├── activity_about.xml
-│   │   │   ├── activity_history.xml
-│   │   │   └── activity_main.xml
-│   │   ├── menu/
-│   │   ├── mipmap/
-│   │   └── values/
-│   │       ├── colors.xml
-│   │       ├── colors.xml (night)
-│   │       ├── strings.xml
-│   │       ├── themes.xml
-│   │       └── themes.xml (night)
-├── build.gradle
-├── screenshots
-├── settings.gradle
-└── README.md
