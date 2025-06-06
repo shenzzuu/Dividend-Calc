@@ -40,7 +40,7 @@ This application is developed as part of the **Mobile Technology and Development
 
 ## 📦 APK Download
 
-You can download and install the APK from the **[Releases section](https://github.com/YourUsername/DividendCalc/releases)** of this repository.
+You can download and install the APK from the **[Releases section](https://github.com/shenzzuu/Dividend-Calc/tree/master/release)** of this repository.
 
 ---
 
