@@ -38,6 +38,12 @@ This application is developed as part of the **Mobile Technology and Development
 
 ---
 
+## 📦 APK Download
+
+You can download and install the APK from the **[Releases section](https://github.com/YourUsername/DividendCalc/releases)** of this repository.
+
+---
+
 ## 🔗 GitHub Repository
 
 GitHub Source Code: [Click here](https://github.com/shenzzuu/Dividend-Calc.git)
@@ -82,3 +88,16 @@ Watch the 5-minute video demo: [Link to YouTube](https://youtu.be/s3GSj4pJdpEz)
 > ➤ Total Dividend = RM2,500.00
 
 ---
+
+## ✅ Submission Checklist
+
+- [✅] APK file (`Dividend Calculator.apk`)
+- [✅] GitHub repository link
+- [✅] UI screenshots (Home, History & About)
+- [✅] Presentation video (≈5 minutes)
+
+---
+
+📬 For any inquiries, contact:  
+📧 Email: [2023149239@student.uitm.edu.my](mailto:2023149239@student.uitm.edu.my)  
+📱 Phone: +60 11-6153 8600
